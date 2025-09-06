@@ -1,8 +1,15 @@
 <h1 align="center">Kattis and Leetcode solutions</h1>
 
+<h2>Kattis</h2>
+<p>Primarily solved with <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="20"/> Python3</p>
+
+<p>Solved Kattis questions + Difficulty ratings</p>
+<table></table>
+
+
 ###
 <h2 align="left">LeetCode</h2>
-<p>Primarily done with <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="20"/> Python3
+<p>Primarily solved with <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="20"/> Python3
 </p>
 <p>LeetCode Stats</p>
 
