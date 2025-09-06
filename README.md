@@ -1,1 +1,1 @@
-<h2>Kattis and Leetcode solutions</h2>
+<h2 style="center">Kattis and Leetcode solutions</h2>
