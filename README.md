@@ -1,2 +1,1 @@
-# kattis
-Kattis codes, solutions
+<h2>Kattis and Leetcode solutions</h2>
