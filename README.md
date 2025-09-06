@@ -4,7 +4,24 @@
 <p>Primarily solved with <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="20"/> Python3</p>
 
 <p>Solved Kattis questions + Difficulty ratings</p>
-<table></table>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Runtime</th>
+      <th>Difficulty Rating</th>
+      <th>Code Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 
 ###
