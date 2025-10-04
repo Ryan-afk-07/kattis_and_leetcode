@@ -70,7 +70,7 @@ class Solution:
         
         split1, split2 = split(remainder, head)
         rev2 = reversenode(split2)
-        print(split1, rev2)
+        #print(split1, rev2)
         combine = addtwonodes(split1, rev2)
         return combine
 
