@@ -16,9 +16,11 @@ class Solution:
         def backtrack(summ, combi, times):
             #root case: once the number of times (3) has been reached
             if times == 3:
+                #idea- after 3 dots has been assigned, if the last string of numbers is more than 3, it means its definitely more than 255 la. Then can remove immediately. Like duh
                 if summ > 3:
                     return
                 else:
+                    #idea - after 3 dots has been assigned, if the last string or number is negative and zero, means an IP address can't even be set.
                     if summ <= 0:
                         return
                     combi = combi + [summ]
@@ -32,6 +34,9 @@ class Solution:
         backtrack(length, [], 0)
         print(res)
 
+        """function is to check if the retrieved seq of numbers will produce:
+        1. numbers more than 255
+        2. numbers that look like this : 02, or 025 etc etc"""
         def checkvalid(listi):
             pointer = 0
             for i in range(4):
@@ -43,6 +48,7 @@ class Solution:
                 pointer += listi[i]
             return True
 
+        #this one is just a typical create IP address from seq of numbers sort of function
         def createIP(listi):
             IP = s
             pointer = 0
