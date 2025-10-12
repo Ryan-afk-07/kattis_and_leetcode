@@ -8,21 +8,19 @@ class Solution:
         3. If the list is not. Initiate a pointer that starts with the first value. If the pointer is strictly greater, return the target, if not, add pointer with 1 and add target with 1 and continue on 
         """
         #remove negative numbers
-        removed = set([i for i in nums if i > 0])
+        nums = [i for i in nums if i > 0]
 
         #case where all zeros or negative numbers
-        if not removed:
+        if not nums:
             return 1
 
-        final_sort = sorted(list(removed))
-        print(final_sort)
+        nums.sort()
         target = 1
-        pointer = 0
-        while pointer < len(final_sort):
-            if final_sort[pointer] > target:
+        for n in nums:
+            if n == target:
+                target += 1
+            elif n > target:
                 return target
-            pointer += 1
-            target += 1
             
-        return final_sort[pointer-1]+1
+        return target
         
