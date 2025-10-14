@@ -64,28 +64,35 @@ class Solution:
             words_hash[i] = words_hash.get(i,0) + 1
         ans = []
         print(words_hash)
+        #because each word in the words list is of the same length. Variation of error chars in the string must be considered. I.e. if there is a word xfoobarfoo: valid word starts in the 1st and 4th (increments of 3) for xxfoobarfoo its 2nd and 5th - notice the pattern
         for offset in range(wordSize):
             start = offset
             currentCount = {}
             count = 0
+            #this is just an auto skip of wordsize, since each word is wordsize chars long
             for end in range(offset, len(s) - wordSize + 1, wordSize):
+                print(start, count, 'window')
                 curr_word = s[end:end + wordSize]
                 if curr_word in words_hash:
                     currentCount[curr_word] = currentCount.get(curr_word, 0) + 1
                     count += 1
 
+                    #this while loop continues the move of the window outwards, until the window is seen to be a substring, then append the index (which is the start)
                     while currentCount[curr_word] > words_hash[curr_word]:
                         start_word = s[start:start + wordSize]
                         currentCount[start_word] -= 1
                         start += wordSize
                         count -= 1
+                        print(start, count, 'current_window')
 
                     if count == word_count:
                         ans.append(start)
+                #situation where either 1. word is NOT IN original words list or 2. doesn't fulfill the word hashmap number of words
                 else:
                     count = 0
                     start = end + wordSize
                     currentCount.clear()
+                    print(start, 'new window')
         return ans
                 
 
