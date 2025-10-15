@@ -76,8 +76,8 @@ class Solution:
                 if curr_word in words_hash:
                     currentCount[curr_word] = currentCount.get(curr_word, 0) + 1
                     count += 1
-
-                    #this while loop continues the move of the window outwards, until the window is seen to be a substring, then append the index (which is the start)
+                    #after this line, if the while loop does not fulfill a right condition, the loop goes back to the front.
+                    #this while loop exists if the substring is TOO long. Hence the move of start word and start position to the right by length of word. And deleting the count number by one. It will be skipped if above IS NOT TRUE.
                     while currentCount[curr_word] > words_hash[curr_word]:
                         start_word = s[start:start + wordSize]
                         currentCount[start_word] -= 1
@@ -85,6 +85,7 @@ class Solution:
                         count -= 1
                         print(start, count, 'current_window')
 
+                    #this is obvious. If count is the same, then take the index la.
                     if count == word_count:
                         ans.append(start)
                 #situation where either 1. word is NOT IN original words list or 2. doesn't fulfill the word hashmap number of words
