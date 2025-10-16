@@ -10,10 +10,10 @@ class Solution:
         for i in range(len(nums)-1, -1, -1):
             #print(nums[i], current)
             difference = current - i
-            #if current is near to the start and we can reach the end, return True
+            #if current is near to the start and our first index value can reach the current index - it means it can reach the end. Return true
             if nums[0] >= current:
                 return True
-            #if steps allowed in the moved index is equals or more than the distance from that index to the current stepped index/last index, move it to be the new current - i.e. backstepping
+            #if steps allowed in the moved index (i.e. nums[index]) from the current index is equals or more than the distance from that index to the current stepped index/last index, move it to be the new current - i.e. backstepping
             elif nums[i] >= difference:
                 current = i
             else:
