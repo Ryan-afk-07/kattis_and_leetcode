@@ -8,7 +8,7 @@ class Solution:
         current = len(nums) - 1
         #print(list(range(len(nums)-1,-1,-1)))
         for i in range(len(nums)-1, -1, -1):
-            print(nums[i], current)
+            #print(nums[i], current)
             difference = current - i
             #if current is near to the start and we can reach the end, return True
             if nums[0] >= current:
