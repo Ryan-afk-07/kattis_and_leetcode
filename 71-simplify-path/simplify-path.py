@@ -64,6 +64,14 @@ class Solution:
         return path
 
 
+        """
+        There is a solid solution. Remember the .SPLIT() FUNCTION!?
+        God damn it. HAHA. This will make things easier alr.
+        Use the split to split up all the directory and then list them in a list.
+        If the current cell index is a '..', then pop then previous one. FK SAKE. 
+        At the end, just join all the rest tgt
+        """
+
             
 
 
