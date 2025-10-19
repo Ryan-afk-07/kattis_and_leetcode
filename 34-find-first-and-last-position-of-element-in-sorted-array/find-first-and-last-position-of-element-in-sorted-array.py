@@ -14,14 +14,14 @@ class Solution:
         numm = nums
         while len(numm) > 1:
             temp = len(numm)//2
-            print(start, end, temp, current, numm)
+            #print(start, end, temp, current, numm)
             #scenario1: if we are lucky and that value is right smack there.
             if target == numm[temp]:
                 while (temp + start) >= 0 and numm[temp + start] == target:
                     start -= 1
                 while (temp + end) < len(numm) and numm[temp + end] == target:
                     end += 1
-                print(start, end)
+                #print(start, end)
                 return [current + start + 1, current + end - 1]
             
             #scenario2 and 3: when the middle value is either more or less than the target.
@@ -43,12 +43,12 @@ class Solution:
             
         
         if numm[0] == target:
-            print(nums, current, start, end)
+            #print(nums, current, start, end)
             while (current + start) >= 0 and nums[current + start] == target:
                 start -= 1
             while (current + end) < len(nums) and nums[current + end] == target:
                 end += 1
-            print(start, end)
+            #print(start, end)
             return [current + start + 1, current + end - 1]
         else:
             return [-1,-1]
