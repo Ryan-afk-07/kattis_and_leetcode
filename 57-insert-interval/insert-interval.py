@@ -19,7 +19,7 @@ class Solution:
             if checkintervals(newInterval, intervals[i]):
                 overlap_intervals.append(i)
         
-        print(overlap_intervals)
+        #print(overlap_intervals)
 
         #when newInterval does NOT contain nor overlap ANY interval in the intervals list
         inde = None
