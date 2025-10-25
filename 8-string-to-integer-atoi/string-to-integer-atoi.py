@@ -40,12 +40,12 @@ class Solution:
                 else:
                     s = s[1:]
         
-        print(s)
+        #print(s)
         if not s:
             return 0
         pointer = 0
         while pointer < len(s):
-            print(pointer, sliced, len(s))
+            #print(pointer, sliced, len(s))
             #immediately analyze string if it is already at 10 length (which is the amnt of chars for 2**31)
             if len(sliced) > 10:
                 if sign == "-":
@@ -79,7 +79,7 @@ class Solution:
                 pointer += 1
     
         res = 0
-        print(sliced)
+        #print(sliced)
         #in case of situations where there is a bloody +- joke
         if not sliced:
             return 0
@@ -103,7 +103,7 @@ class Solution:
                     return -2**31
                 else:
                     for i in range(len(sliced)):
-                        print(res)
+                        #print(res)
                         res += integers_dic[sliced[i]] * (10**i)
                     return -res
                 
@@ -115,13 +115,13 @@ class Solution:
                     return 2**31 - 1
                 else:
                     for i in range(len(sliced)):
-                        print(res)
+                        #print(res)
                         res += integers_dic[sliced[i]] * (10**i)
                     return res
         else:
-            print('heckyea')
+            #print('heckyea')
             for i in range(len(sliced)):
-                print(res)
+                #print(res)
                 res += integers_dic[sliced[i]] * (10**i)
             if sign == '-':
                 return -res
