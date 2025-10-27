@@ -47,13 +47,14 @@ class Solution:
                             ans.append(j+1)
                 result.append(ans)
             
+            #this will iterate through all columns in the first row
             for i in range(n):
                 if issafe(board, row, i):
                     board[row][i] = 1
                     #continue into the next row
                     placequeens(row+1, board,result)
 
-                    #backtrack
+                    #backtrack to allow the above for loop to apply to all before row values
                     board[row][i] = 0
             
         def queensolution(n):
