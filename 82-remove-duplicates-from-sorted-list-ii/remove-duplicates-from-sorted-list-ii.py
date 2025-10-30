@@ -54,10 +54,11 @@ class Solution:
         if to_convert == 'Error':
             return None
         
-        #handles linkedlist if all values in 
+        #handles linkedlist with one unique value. Just return that value
         if not to_convert:
             return head
 
+        #all other cases that are not the top
         final = curr = ListNode(to_convert[0])
 
         for i in range(1, len(to_convert)):
