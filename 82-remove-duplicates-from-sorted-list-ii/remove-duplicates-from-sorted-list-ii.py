@@ -7,7 +7,13 @@ class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         """
         Initially thought need to do a hashmap. But since it is an ascending/sorted linked list, can just set a current linked list pointer that changes once a new value is seen, and removes all subsequent until a new node with new node value is seen or pointer has reached the end. I.e. node.next == None
+
+        ##New solution:
+        1. Create a new list of unique numbers (numbers that only show up once) after travesing the existing linkedlist
+        2. From the retrieved list, create a new linkedlist with the unique numbers i guess.
+        Might have better solutions but this is the best i could think with
         """
+        #base case: No values in linkedlist
         if not head:
             return head
         
@@ -33,18 +39,22 @@ class Solution:
                     count = 1
                     move = move.next
             print(curr_val, count)
+            #ensure last value is accounted if it is a unique value
             if count == 1:
                 result.append(curr_val)
             res = result[1:]
+            #making sure that the entire linkedlist is not the same value. I.e. [2,2,2,2,2]
             if count > 1 and res == []:
                 return 'Error'
             return res
 
         to_convert = removeduplicate(head)
-        print(to_convert)
+        #print(to_convert)
+        ##Handles linkedlist with JUST ONE VALUE inside
         if to_convert == 'Error':
             return None
         
+        #handles linkedlist if all values in 
         if not to_convert:
             return head
 
