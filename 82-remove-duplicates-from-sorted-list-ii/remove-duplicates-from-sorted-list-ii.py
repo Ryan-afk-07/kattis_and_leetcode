@@ -38,7 +38,7 @@ class Solution:
                     curr_val = move.val
                     count = 1
                     move = move.next
-            print(curr_val, count)
+            #print(curr_val, count)
             #ensure last value is accounted if it is a unique value
             if count == 1:
                 result.append(curr_val)
