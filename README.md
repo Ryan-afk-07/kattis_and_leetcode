@@ -18,43 +18,43 @@
       <td>99 Problems</td>
       <td>0.04s</td>
       <td>2.5 Easy</td>
-      <td></td>
+      <td><a href="https://github.com/Ryan-afk-07/kattis_and_leetcode/blob/main/kattis_scripts/99problems.py">Click Here</a></td>
     </tr>
     <tr>
       <td>Barcelona</td>
       <td>0.08s</td>
       <td>1.3 Easy</td>
-      <td></td>
+      <td><a href="https://github.com/Ryan-afk-07/kattis_and_leetcode/blob/main/kattis_scripts/Barcelona.py">Click Here</a></td>
     </tr>
     <tr>
       <td>Card Trick</td>
       <td>0.07s</td>
       <td>2.2 Easy</td>
-      <td></td>
+      <td><a href="https://github.com/Ryan-afk-07/kattis_and_leetcode/blob/main/kattis_scripts/Card_Trick%20-%20with%20text%20explain.py">Click Here</a></td>
     </tr>
     <tr>
       <td>Engineering English</td>
       <td>0.07s</td>
       <td>2.5 Easy</td>
-      <td></td>
+      <td><a href="https://github.com/Ryan-afk-07/kattis_and_leetcode/blob/main/kattis_scripts/Engineeringeng.py">Click Here</a></td>
     </tr>
     <tr>
       <td>Fence Bowling</td>
       <td>0.04s</td>
       <td>3.0 Medium</td>
-      <td></td>
+      <td><a href="https://github.com/Ryan-afk-07/kattis_and_leetcode/blob/main/kattis_scripts/Fencebowling.py">Click Here</a></td>
     </tr>
     <tr>
       <td>Jumbled Communication</td>
       <td>0.07s</td>
       <td>2.0 Easy</td>
-      <td></td>
+      <td><a href="https://github.com/Ryan-afk-07/kattis_and_leetcode/blob/main/kattis_scripts/Jumbled_communication%20-%20with%20text%20explain.py">Click Here</a></td>
     </tr>
     <tr>
       <td>Mosquito Multiplication</td>
       <td>0.09s</td>
       <td>1.9 Easy</td>
-      <td></td>
+      <td><a href="https://github.com/Ryan-afk-07/kattis_and_leetcode/blob/main/kattis_scripts/Mosquitoes%20-%20with%20text%20explain.py">Click Here</a></td>
     </tr>
     <tr>
       <td>N-puzzle</td>
