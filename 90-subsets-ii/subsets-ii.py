@@ -16,14 +16,17 @@ class Solution:
 
             for num in range(start, end):
                 units.append(nums[num])
+                print(units, 'bef')
                 backtrack(num+1)
                 units.pop()
+                #pop function is done to remove the last value out of each segment of the units list as the loop moves. Technically a magic formula to ensure that all sorts of permutations are considered. Kind of like backtrack that i did, but this suits the for loop algorithm, instead of recursive
+                print(units, 'aft')
         
         for i in range(1,end+1):
             #intermediate storage list for each iteration of length of list
             units = []
             backtrack(0)
-            print(main)
+            #print(main)
 
         return [[]] + main
         
