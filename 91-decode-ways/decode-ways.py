@@ -24,6 +24,7 @@ class Solution:
         
             # take 2 digits only if it's valid (<= 26)
             if start + 1 < end and int(s[start:start+2]) <= 26:
+                ##this addition is to show that this start has a dual validity, hence the extra addition.
                 ways += dfs(start + 2)
         
             memo[start] = ways
