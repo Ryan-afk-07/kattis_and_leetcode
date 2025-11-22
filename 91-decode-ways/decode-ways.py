@@ -1,5 +1,8 @@
 class Solution:
     def numDecodings(self, s: str) -> int:
+        """
+        the below function shows memoization and dynamic programming. I.e. using stored previous values as a reference to the next. Its a rather similar technique as to the number of paths from a certain start to end. Same as the n-queens question. All dynamic programming.
+        """
         
         if not s or s[0] == "0":
             return 0
