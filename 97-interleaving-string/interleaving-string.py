@@ -21,6 +21,7 @@ class Solution:
                 choose_s2 = dfs(i, j+1)
                 cache[(i, j+1)] = choose_s2
             
+            #putting choose_s1 and choose_s2 as False is to prevent that value from being taken. How smart.
             return choose_s1 or choose_s2
         
         return dfs(0,0)
