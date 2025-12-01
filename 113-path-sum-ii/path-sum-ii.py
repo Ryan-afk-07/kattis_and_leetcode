@@ -13,8 +13,11 @@ class Solution:
             value = [root.val]
             val = root.val
             print(value, val, 'start')
+            #set a list version to be appended to the final list, and a pure value version to be used for the subsequent statements.
+            #above statement just returns once a leaf node is passed
             if not root:
                 return
+            #current value gives the sum - it must be a leaf node for the eventual result to be saved into the final list
             if val == target:
                 print(val, value, 'equal')
                 if not root.left and not root.right:
@@ -22,6 +25,7 @@ class Solution:
                     final.append(summ)
 
             summ = summ + value
+            #iterating through the left and right nodes (if there is)
             if root.left:
                 left = root.left
                 checksum(left, target - val, summ)
